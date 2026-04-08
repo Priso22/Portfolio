@@ -62,16 +62,16 @@ nav ul li a {
 
 nav ul li a:hover { color: var(--primary); }
 
-/* --- HERO SECTION --- */
+/* --- HERO SECTION MODIFIÉE --- */
 .hero {
-    min-height: 60vh; /* Réduit pour éviter le grand vide blanc en dessous */
+    min-height: 55vh; /* Réduit pour supprimer l'excès de vide */
     background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 120px 20px 80px; /* Ajustement du padding interne */
+    padding: 100px 20px 60px; /* Padding équilibré pour garder le texte au centre */
 }
 
 .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; letter-spacing: -1px; }
@@ -100,9 +100,9 @@ nav ul li a:hover { color: var(--primary); }
     padding: 0 20px;
 }
 
-/* On réduit spécifiquement la marge du haut pour la première section après le hero */
+/* On réduit spécifiquement la transition entre le hero et le contenu */
 .first-section {
-    margin-top: 40px; 
+    margin-top: 30px; 
 }
 
 .section-title {
@@ -194,7 +194,7 @@ footer {
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.2rem; }
-    .hero { min-height: 50vh; }
+    .hero { min-height: 45vh; } /* Encore plus compact sur mobile */
     nav ul li a {
         margin-left: 15px;
         font-size: 0.85rem;
